@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            keyAlias = '11111111'
+            storeFile file('E:\\Code\\Demo\\AndroidRemoteDebugger\\keystore2.jks')
+            storePassword '11111111'
+            keyPassword '11111111'
+        }
+    }
     compileSdk 30
 
     defaultConfig {
